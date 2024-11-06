@@ -91,6 +91,19 @@ class _HomePageState extends State<HomePage> {
                     child: Text("Arabic",style: TextStyle(color: Colors.white),),
                   ),
                 ),
+                SizedBox(
+                  width: 10,
+                ),
+                Expanded(
+                  child: MaterialButton(
+                    height: 45,
+                    color: Colors.black,
+                    onPressed: () {
+                      context.setLocale(Locale('fr', 'FR'));
+                    },
+                    child: Text("Franch",style: TextStyle(color: Colors.white),),
+                  ),
+                ),
               ],
             ),
           ],
